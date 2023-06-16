@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    background-image: url('enkripsi.jpg');
+    background-size: cover;
+    
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+.button-vigenere {
+    backdrop-filter: blur(5px);
+    width: 100%;
+    max-width: 400px;
+    display: flex; 
+    justify-content: center;   
+}
+
+.btn-vigenere{
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    position: relative;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-deskripsi{
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #D8A45D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    backdrop-filter: blur(5px);
+}
+.hasilcopy{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #0056b3;
+    text-align: center;
+    top: 130px;
+    right: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+
+}
+.hasil:hover {
+    text-decoration: underline;
+  }
+
+button:hover {
+    background-color: #042f5c;
+}
+footer {
+    width: 440px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+/* CSS untuk perangkat mobile */
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+    .button-vigenere, .container {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vigenere Cipher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Vigenere Cipher</h1>
+  <div class="button-vigenere">
+    <button id="encrypt" class="btn-vigenere">Enkripsi</button>
+    <button id="decrypt" class="btn-vigenere">Deskripsi</button>
+  </div>
+  <div id="encrypt-div" class="container">
+    <div>
+      <label for="plaintext">Masukan Plaintext:</label>
+      <input type="text" id="plaintext">
+    </div>
+    <div>
+      <label for="key">Masukan key:</label>
+      <input type="text" id="key">
+    </div>
+    <button id="encrypt-btn">Enkripsi</button>
+    <div>
+      <label for="ciphertext">Ciphertext:</label>
+      <h1 id="ciphertext" class="hasil"></h1>
+    </div>
+  </div>
+  <div id="decrypt-div" class="container container-deskripsi">
+    <div>
+      <label for="ciphertext">Masukan Ciphertext:</label>
+      <input type="text" id="input-ciphertext">
+    </div>  
+    <div>
+      <label for="key">Masukan key:</label>
+      <input type="text" id="key-2">
+    </div>
+    <button id="decrypt-btn">Dekripsi</button>
+    <div>
+      <label for="decrypted-plaintext">Plaintext:</label>
+      <h1 id="decrypted-plaintext" class="hasil"></h1>
+    </div>
+     
+  </div>
+  <footer>
+    <p>&copy; Haldies 2023</p>
+  </footer>
+  <div class="hasilcopy" id="notifcopy">copied</div>  
+  </main> 
+  <script src="script.js"></script>
+</body>
+</html>

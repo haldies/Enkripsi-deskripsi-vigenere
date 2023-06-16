@@ -41,3 +41,5 @@ plaintext = decrypt_vigenere(ciphertext, key)
 # Mencetak hasil dekripsi
 print("Key:", key)
 print("Plaintext:", plaintext)
+
+
